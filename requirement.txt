@@ -1,0 +1,11 @@
+requests
+opencv-python
+customtkinter
+tensorflow
+pillow
+numpy
+speech_recognition
+pyttsx3
+
+To install these dependencies, use the following command:
+pip install -r requirements.txt
