@@ -7,11 +7,10 @@ Welcome to the **AI Empathetic Chatbot with Multimodal Fusion** project! This in
 ## Table of Contents
 
 - [Features](#features)
-- [Directory Structure](#directory-structure)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
+- [Directory Structure](#directory-structure)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact Information](#contact-information)
@@ -21,32 +20,59 @@ Welcome to the **AI Empathetic Chatbot with Multimodal Fusion** project! This in
 
 ## Features
 
-- **Speech Emotion Recognition (SER):** Detects emotions from spoken words using advanced audio processing techniques.
-- **Text Emotion Recognition (TER):** Analyzes and interprets emotions conveyed through text input.
-- **Facial Emotion Recognition (FER):** Utilizes camera input to detect and interpret facial expressions.
-- **BlenderBot Response:** Generates contextually relevant and empathetic responses based on detected emotions and user input.
+- **Speech Emotion Recognition (SER):** Detects emotions from spoken words.
+- **Text Emotion Recognition (TER):** Analyzes emotions in text input.
+- **Facial Emotion Recognition (FER):** Identifies emotions from facial expressions.
+- **BlenderBot Response:** Provides empathetic responses based on detected emotions.
 
 ---
 
-## Directory Structure
+## Technologies Used
 
-```plaintext
-AI-Empathetic-Chatbot-with-Multimodal-Fusion/
-│
-├── APP/
-│   ├── CT_App.py             # Main application script
-│   ├── CT_functions.py       # Supporting functions for the application
-│   └── api.py                # API configuration and interactions
-│
-├── App Results/              # Results and screenshots of the application
-│   └── Screenshot 2024-04-09 095017.png
-│
-├── Model Building/
-│   ├── Results/              # Model building results
-│   │   ├── download (3).png
-│   │   └── download.png
-│   └── [Model Files]         # Model files and configurations
-│
-├── README.md                 # Project documentation (this file)
-├── requirements.txt          # Required libraries and dependencies
-└── [Other Files and Directories]
+- **Models:**
+  - **SER:** `wav2vec2-lg-xlsr-en-speech-emotion-recognition`
+  - **TER:** `emotion_text_classifier`
+  - **FER:** Custom model (`fer_model.h5`)
+  - **Response Generation:** `facebook/blenderbot-400M-distill`
+  
+- **Libraries:**
+  - `requests`, `opencv-python`, `customtkinter`, `tensorflow`, `pillow`, `numpy`, `speech_recognition`, `pyttsx3`
+
+---
+
+## Installation
+
+### Prerequisites
+
+- **Python 3.7 or higher**
+- **Pip package manager**
+
+### Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/AI-Empathetic-Chatbot-with-Multimodal-Fusion.git
+   cd AI-Empathetic-Chatbot-with-Multimodal-Fusion
+
+Usage
+Running the Application
+Run the API Script:
+
+bash
+Copy code
+python APP/api.py
+Run the Main Application:
+
+Open a new terminal and execute:
+
+bash
+Copy code
+python APP/CT_functions.py
+Launch the Chatbot Application:
+
+Open a new terminal and execute:
+
+bash
+Copy code
+python APP/CT_App.py
