@@ -55,24 +55,4 @@ Welcome to the **AI Empathetic Chatbot with Multimodal Fusion** project! This in
    git clone https://github.com/your-username/AI-Empathetic-Chatbot-with-Multimodal-Fusion.git
    cd AI-Empathetic-Chatbot-with-Multimodal-Fusion
 
-Usage
-Running the Application
-Run the API Script:
 
-bash
-Copy code
-python APP/api.py
-Run the Main Application:
-
-Open a new terminal and execute:
-
-bash
-Copy code
-python APP/CT_functions.py
-Launch the Chatbot Application:
-
-Open a new terminal and execute:
-
-bash
-Copy code
-python APP/CT_App.py
